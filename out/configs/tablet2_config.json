@@ -1,0 +1,122 @@
+{
+  "geometry": {
+    "height_range": [
+      0.6,
+      1.0
+    ],
+    "width_range": [
+      0.7,
+      1.0
+    ],
+    "depth_range": [
+      0.2,
+      0.4
+    ],
+    "epsilon_range": [
+      0.7,
+      0.9
+    ],
+    "eta_range": [
+      0.7,
+      0.9
+    ],
+    "scale_range": [
+      8.0,
+      25.0
+    ]
+  },
+  "carving": {
+    "normal": {
+      "min_depth": 0.025,
+      "max_depth": 0.055,
+      "min_angle": 11.0,
+      "max_angle": 29.0,
+      "min_tilt_angle": -12.0,
+      "max_tilt_angle": 28.0
+    },
+    "small": {
+      "min_depth": 0.015,
+      "max_depth": 0.032,
+      "min_angle": 18.0,
+      "max_angle": 36.0,
+      "min_tilt_angle": -12.0,
+      "max_tilt_angle": 28.0
+    },
+    "large": {
+      "min_depth": 0.045,
+      "max_depth": 0.075,
+      "min_angle": 7.0,
+      "max_angle": 20.0,
+      "min_tilt_angle": -12.0,
+      "max_tilt_angle": 28.0
+    },
+    "base_wedge_size": 0.65,
+    "tangent_collinear_threshold": 0.9
+  },
+  "sdf": {
+    "target_pitch": 0.005555555555555556,
+    "padding": 1.5,
+    "max_grid": 700,
+    "base_bounds_margin": 0.02,
+    "eps_active_fraction": 0.5,
+    "base_label": 1,
+    "cutter_label_offset": 1,
+    "raster_threads": 4
+  },
+  "postprocess": {
+    "target_vertices_range": [
+      70000,
+      200000
+    ],
+    "noise_magnitude": 0.0018,
+    "remesh_iterations": 3,
+    "smooth_iterations": 5,
+    "smooth_lambda": 0.5,
+    "smooth_mu": -0.53
+  },
+  "layout": {
+    "target_sign_height_frac": 0.04,
+    "sign_height_ratio": 0.5,
+    "sign_spacing_ratio": 0.04,
+    "sign_padding": 0.05,
+    "sign_padding_frac": 0.02,
+    "small_sign_bias": 0.7,
+    "project_iters": 8,
+    "band_axis": "y",
+    "flip_vertical_axis": true,
+    "flip_horizontal_axis": true,
+    "global_center_separation": 0.25,
+    "tangent_delta": 0.0001,
+    "arclength_u_samples": 1024,
+    "arclength_v_samples": 2048,
+    "margin_top_frac": 0.04,
+    "margin_bottom_frac": 0.04,
+    "margin_side_frac": 0.05,
+    "row_phase": 0.0,
+    "justify_rows": true,
+    "justify_threshold": 0.55,
+    "n_columns": 1,
+    "column_gap_frac": 0.03
+  },
+  "paleocodage": {
+    "stroke_length": 15.0,
+    "step_x": 3.0,
+    "step_y": 3.5,
+    "big_scale": 1.5,
+    "small_scale": 0.5,
+    "rotation_constant": 15.0,
+    "bbox_padding": 2.0
+  },
+  "generation": {
+    "num_signs_range": [
+      180,
+      320
+    ],
+    "max_attempts": 10,
+    "workers": 1,
+    "base_seed": 42,
+    "max_paleocode_length": null,
+    "flip_tail_direction_x": false,
+    "debug": true
+  }
+}
