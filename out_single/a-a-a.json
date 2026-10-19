@@ -1,0 +1,591 @@
+{
+  "#00896c56-9f58-42dc-b022-aba182b792c3": {
+    "type": "Annotation",
+    "body": [
+      {
+        "type": "SpecificResource",
+        "purpose": "tagging",
+        "source": {
+          "id": "http://purl.org/cuneiform/Wedge",
+          "label": "Wedge"
+        }
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Line",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Charindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Signindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgeindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgetype",
+        "value": "a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Face",
+        "value": "FRONT"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Depth",
+        "value": "0.6273923374642909"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Angle",
+        "value": "8.348933568819351"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "SizeScale",
+        "value": "1.0"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgesize",
+        "value": "normal"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Paleocode",
+        "value": "a-a:a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Transliteration",
+        "value": "A"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Sign",
+        "value": "\ud808\udc00"
+      }
+    ],
+    "target": {
+      "source": "./out_single/a-a-a.ply",
+      "selector": {
+        "type": "Box3DSelector",
+        "value": {
+          "format": "AABB-XYZXYZ",
+          "min": [
+            -1.0787142581038114,
+            1.075832163113726,
+            3.538265969944052
+          ],
+          "max": [
+            -0.2539019432238824,
+            3.504728042120282,
+            4.4208063027540305
+          ],
+          "size": [
+            0.824812314879929,
+            2.4288958790065562,
+            0.8825403328099783
+          ],
+          "center": [
+            -0.6663081006638469,
+            2.290280102617004,
+            3.9795361363490414
+          ],
+          "corners": [
+            [
+              -1.0787142581038114,
+              1.075832163113726,
+              3.538265969944052
+            ],
+            [
+              -0.2539019432238824,
+              1.075832163113726,
+              3.538265969944052
+            ],
+            [
+              -0.2539019432238824,
+              3.504728042120282,
+              3.538265969944052
+            ],
+            [
+              -1.0787142581038114,
+              3.504728042120282,
+              3.538265969944052
+            ],
+            [
+              -1.0787142581038114,
+              1.075832163113726,
+              4.4208063027540305
+            ],
+            [
+              -0.2539019432238824,
+              1.075832163113726,
+              4.4208063027540305
+            ],
+            [
+              -0.2539019432238824,
+              3.504728042120282,
+              4.4208063027540305
+            ],
+            [
+              -1.0787142581038114,
+              3.504728042120282,
+              4.4208063027540305
+            ]
+          ]
+        }
+      }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "#00896c56-9f58-42dc-b022-aba182b792c3"
+  },
+  "#127a7e33-d1dc-48a6-a4a5-a8e4b36df2f6": {
+    "type": "Annotation",
+    "body": [
+      {
+        "type": "SpecificResource",
+        "purpose": "tagging",
+        "source": {
+          "id": "http://purl.org/cuneiform/Wedge",
+          "label": "Wedge"
+        }
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Line",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Charindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Signindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgeindex",
+        "value": "2"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgetype",
+        "value": "a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Face",
+        "value": "FRONT"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Depth",
+        "value": "0.5033055271057059"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Angle",
+        "value": "11.066351196001362"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "SizeScale",
+        "value": "1.0"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgesize",
+        "value": "normal"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Paleocode",
+        "value": "a-a:a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Transliteration",
+        "value": "A"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Sign",
+        "value": "\ud808\udc00"
+      }
+    ],
+    "target": {
+      "source": "./out_single/a-a-a.ply",
+      "selector": {
+        "type": "Box3DSelector",
+        "value": {
+          "format": "AABB-XYZXYZ",
+          "min": [
+            -0.08187160048319794,
+            2.3145279994792127,
+            3.697817650284925
+          ],
+          "max": [
+            0.6483502232538928,
+            3.568882913045359,
+            4.277268907275001
+          ],
+          "size": [
+            0.7302218237370908,
+            1.2543549135661465,
+            0.579451256990076
+          ],
+          "center": [
+            0.2832393113853474,
+            2.941705456262286,
+            3.987543278779963
+          ],
+          "corners": [
+            [
+              -0.08187160048319794,
+              2.3145279994792127,
+              3.697817650284925
+            ],
+            [
+              0.6483502232538928,
+              2.3145279994792127,
+              3.697817650284925
+            ],
+            [
+              0.6483502232538928,
+              3.568882913045359,
+              3.697817650284925
+            ],
+            [
+              -0.08187160048319794,
+              3.568882913045359,
+              3.697817650284925
+            ],
+            [
+              -0.08187160048319794,
+              2.3145279994792127,
+              4.277268907275001
+            ],
+            [
+              0.6483502232538928,
+              2.3145279994792127,
+              4.277268907275001
+            ],
+            [
+              0.6483502232538928,
+              3.568882913045359,
+              4.277268907275001
+            ],
+            [
+              -0.08187160048319794,
+              3.568882913045359,
+              4.277268907275001
+            ]
+          ]
+        }
+      }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "#127a7e33-d1dc-48a6-a4a5-a8e4b36df2f6"
+  },
+  "#fa7b6e21-374f-4ce7-a53d-0e6c8391eeb8": {
+    "type": "Annotation",
+    "body": [
+      {
+        "type": "SpecificResource",
+        "purpose": "tagging",
+        "source": {
+          "id": "http://purl.org/cuneiform/Wedge",
+          "label": "Wedge"
+        }
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Line",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Charindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Signindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgeindex",
+        "value": "3"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgetype",
+        "value": "a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Face",
+        "value": "FRONT"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Depth",
+        "value": "0.621327155153436"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Angle",
+        "value": "10.647482804919992"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "SizeScale",
+        "value": "1.0"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgesize",
+        "value": "normal"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Paleocode",
+        "value": "a-a:a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Transliteration",
+        "value": "A"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Sign",
+        "value": "\ud808\udc00"
+      }
+    ],
+    "target": {
+      "source": "./out_single/a-a-a.ply",
+      "selector": {
+        "type": "Box3DSelector",
+        "value": {
+          "format": "AABB-XYZXYZ",
+          "min": [
+            -0.1715346063130228,
+            0.13655066117962553,
+            3.7823951413134664
+          ],
+          "max": [
+            0.6830007856031252,
+            2.524087349001358,
+            4.47262921988932
+          ],
+          "size": [
+            0.854535391916148,
+            2.3875366878217323,
+            0.6902340785758532
+          ],
+          "center": [
+            0.25573308964505115,
+            1.3303190050904916,
+            4.127512180601393
+          ],
+          "corners": [
+            [
+              -0.1715346063130228,
+              0.13655066117962553,
+              3.7823951413134664
+            ],
+            [
+              0.6830007856031252,
+              0.13655066117962553,
+              3.7823951413134664
+            ],
+            [
+              0.6830007856031252,
+              2.524087349001358,
+              3.7823951413134664
+            ],
+            [
+              -0.1715346063130228,
+              2.524087349001358,
+              3.7823951413134664
+            ],
+            [
+              -0.1715346063130228,
+              0.13655066117962553,
+              4.47262921988932
+            ],
+            [
+              0.6830007856031252,
+              0.13655066117962553,
+              4.47262921988932
+            ],
+            [
+              0.6830007856031252,
+              2.524087349001358,
+              4.47262921988932
+            ],
+            [
+              -0.1715346063130228,
+              2.524087349001358,
+              4.47262921988932
+            ]
+          ]
+        }
+      }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "#fa7b6e21-374f-4ce7-a53d-0e6c8391eeb8"
+  },
+  "#51b86a7e-b1f9-4da9-a5ba-c650c9e67e82": {
+    "type": "Annotation",
+    "body": [
+      {
+        "type": "SpecificResource",
+        "purpose": "tagging",
+        "source": {
+          "id": "http://purl.org/cuneiform/Character",
+          "label": "Character"
+        }
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Transliteration",
+        "value": "A"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Line",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Charindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Signindex",
+        "value": "1"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgecount",
+        "value": "3"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "WedgeTypes",
+        "value": "a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Faces",
+        "value": "FRONT"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Wedgeids",
+        "value": "1,2,3"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Paleocode",
+        "value": "a-a:a"
+      },
+      {
+        "type": "TextualBody",
+        "purpose": "Sign",
+        "value": "\ud808\udc00"
+      }
+    ],
+    "target": {
+      "source": "./out_single/a-a-a.ply",
+      "selector": {
+        "type": "Box3DSelector",
+        "value": {
+          "format": "AABB-XYZXYZ",
+          "min": [
+            -1.0787142581038114,
+            0.13655066117962553,
+            3.538265969944052
+          ],
+          "max": [
+            0.6830007856031252,
+            3.568882913045359,
+            4.47262921988932
+          ],
+          "size": [
+            1.7617150437069364,
+            3.4323322518657338,
+            0.9343632499452674
+          ],
+          "center": [
+            -0.1978567362503431,
+            1.8527167871124923,
+            4.005447594916686
+          ],
+          "corners": [
+            [
+              -1.0787142581038114,
+              0.13655066117962553,
+              3.538265969944052
+            ],
+            [
+              0.6830007856031252,
+              0.13655066117962553,
+              3.538265969944052
+            ],
+            [
+              0.6830007856031252,
+              3.568882913045359,
+              3.538265969944052
+            ],
+            [
+              -1.0787142581038114,
+              3.568882913045359,
+              3.538265969944052
+            ],
+            [
+              -1.0787142581038114,
+              0.13655066117962553,
+              4.47262921988932
+            ],
+            [
+              0.6830007856031252,
+              0.13655066117962553,
+              4.47262921988932
+            ],
+            [
+              0.6830007856031252,
+              3.568882913045359,
+              4.47262921988932
+            ],
+            [
+              -1.0787142581038114,
+              3.568882913045359,
+              4.47262921988932
+            ]
+          ]
+        }
+      }
+    },
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "id": "#51b86a7e-b1f9-4da9-a5ba-c650c9e67e82"
+  }
+}

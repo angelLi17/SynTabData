@@ -59,7 +59,15 @@ class DebugTabletConfig:
     sign_height_frac: float = 0.15   # sign height as fraction of tablet height (2 * b)
 
 
-DEBUG_TABLET = DebugTabletConfig()
+DEBUG_TABLET = DebugTabletConfig(
+    a=0.70,                  # x half-axis (width)
+    b=0.80,                  # y half-axis (height)
+    c=0.45,                  # z half-axis (thickness), default 0.25
+    epsilon=0.95,            # z-axis roundness, default 0.85
+    eta=0.95,                # xy-plane roundness, default 0.82
+    scale_mm=10.0,
+    sign_height_frac=0.15,
+)
 
 
 @dataclass(frozen=True)
@@ -358,3 +366,23 @@ class TabletConfig:
     def from_json(cls, path: str) -> "TabletConfig":
         with open(path, "r", encoding="utf-8") as f:
             return cls.from_dict(json.load(f))
+
+CURVED_RUN_CONFIG = TabletConfig(
+    geometry=GeometryConfig(
+        depth_range=(0.35, 0.6),     # was (0.2, 0.4)
+        epsilon_range=(0.8, 0.9),    # was (0.7, 0.9)
+        eta_range=(0.8, 0.9),        # was (0.7, 0.9)
+    ),
+    layout=LayoutConfig(
+        target_sign_height_frac=0.06,  # was 0.04
+        project_iters=12,              # was 8
+    ),
+    generation=GenerationConfig(
+        base_seed=1234,
+        workers=4,
+    ),
+)
+
+BASELINE_RUN_CONFIG = TabletConfig(
+    generation=GenerationConfig(base_seed=5678, workers=4),  # everything else default
+)

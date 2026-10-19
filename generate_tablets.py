@@ -269,19 +269,36 @@ def generate_dataset(
                 future.result()
 
 
+#if __name__ == "__main__":
+#    from config import GenerationConfig
+#    generate_dataset(
+#        cfg=TabletConfig(generation=GenerationConfig(debug=True, base_seed=42)),
+#        paleocodes_path="./paleocodes.json",
+#        output_dirs={
+#            "mesh":        "./out/plys/",
+#            "labels":      "./out/labels/",
+#            "annotations": "./out/annotations/",
+#            "configs":     "./out/configs/",
+#        },
+#        filename_prefix="tablet",
+#        num_tablets=10,
+#        sign_source="paleocode",
+#        exclude_faces=[DIRECTION.BOTTOM, DIRECTION.TOP],
+#    )
 if __name__ == "__main__":
-    from config import GenerationConfig
-    generate_dataset(
-        cfg=TabletConfig(generation=GenerationConfig(debug=True, base_seed=42)),
-        paleocodes_path="./paleocodes.json",
-        output_dirs={
-            "mesh":        "./out/plys/",
-            "labels":      "./out/labels/",
-            "annotations": "./out/annotations/",
-            "configs":     "./out/configs/",
-        },
-        filename_prefix="tablet",
-        num_tablets=10,
-        sign_source="paleocode",
-        exclude_faces=[DIRECTION.BOTTOM, DIRECTION.TOP],
-    )
+    from config import CURVED_RUN_CONFIG, BASELINE_RUN_CONFIG
+
+    for name, cfg in (("curved", CURVED_RUN_CONFIG), ("baseline", BASELINE_RUN_CONFIG)):
+        generate_dataset(
+            cfg=cfg,
+            paleocodes_path="./paleocodes.json",
+            output_dirs={
+                "mesh": f"./out_{name}/plys/",
+                "labels": f"./out_{name}/labels/",
+                "annotations": f"./out_{name}/annotations/",
+                "configs": f"./out_{name}/configs/",
+            },
+            filename_prefix=name,
+            num_tablets=500,
+            exclude_faces=None,
+        )
