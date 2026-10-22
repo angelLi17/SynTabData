@@ -58,7 +58,15 @@ class DebugTabletConfig:
     scale_mm: float = 10.0   # final mesh scale in mm
     sign_height_frac: float = 0.15   # sign height as fraction of tablet height (2 * b)
 
+# run 3 w3dge match + curving debug
+DEBUG_TABLET = DebugTabletConfig(
+    a=0.40, b=0.60, c=0.20,          # 40 x 60 x 20 mm
+    epsilon=0.95, eta=0.95,
+    scale_mm=50.0,
+    sign_height_frac=0.15,
+)
 
+# run 2 curving debug
 DEBUG_TABLET = DebugTabletConfig(
     a=0.70,                  # x half-axis (width)
     b=0.80,                  # y half-axis (height)
@@ -383,6 +391,33 @@ CURVED_RUN_CONFIG = TabletConfig(
     ),
 )
 
-BASELINE_RUN_CONFIG = TabletConfig(
-    generation=GenerationConfig(base_seed=5678, workers=4),  # everything else default
+# run 3 w3dge + curved
+
+_MATCH_GEOM = dict(
+    height_range=(0.50, 0.70),     # 50-70 mm long
+    width_range=(0.39, 0.41),      # ~40 mm wide
+    depth_range=(0.19, 0.21),      # ~20 mm thick
+    scale_range=(50.0, 50.1),      # effectively fixed; mm = 100 x half-axis
+)
+
+_FINE = dict(
+    sdf=SdfConfig(target_pitch=0.0021, max_grid=800),            # ~0.105 mm voxels
+    postprocess=PostprocessConfig(
+        target_vertices_range=(600_000, 800_000),                # ~0.1 mm spacing
+        noise_magnitude=0.0004,                                  # up to ~0.02 mm
+    ),
+)
+
+W3DGE_BASELINE_CONFIG = TabletConfig(      # default shape, for comparison
+    geometry=GeometryConfig(**_MATCH_GEOM),
+    layout=LayoutConfig(target_sign_height_frac=0.06, project_iters=12),
+    generation=GenerationConfig(base_seed=5678, workers=2),
+    **_FINE,
+)
+
+W3DGE_CURVED_CONFIG = TabletConfig(        # rounder tablets, more curved writing
+    geometry=GeometryConfig(**_MATCH_GEOM, epsilon_range=(0.9, 1.0), eta_range=(0.9, 1.0)),
+    layout=LayoutConfig(target_sign_height_frac=0.06, project_iters=12),
+    generation=GenerationConfig(base_seed=1234, workers=2),
+    **_FINE,
 )

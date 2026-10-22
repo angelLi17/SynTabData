@@ -268,7 +268,7 @@ def generate_dataset(
             for future in as_completed(futures):
                 future.result()
 
-
+# ----run 1----
 #if __name__ == "__main__":
 #    from config import GenerationConfig
 #    generate_dataset(
@@ -285,20 +285,41 @@ def generate_dataset(
 #        sign_source="paleocode",
 #        exclude_faces=[DIRECTION.BOTTOM, DIRECTION.TOP],
 #    )
-if __name__ == "__main__":
-    from config import CURVED_RUN_CONFIG, BASELINE_RUN_CONFIG
 
-    for name, cfg in (("curved", CURVED_RUN_CONFIG), ("baseline", BASELINE_RUN_CONFIG)):
-        generate_dataset(
-            cfg=cfg,
-            paleocodes_path="./paleocodes.json",
-            output_dirs={
-                "mesh": f"./out_{name}/plys/",
-                "labels": f"./out_{name}/labels/",
-                "annotations": f"./out_{name}/annotations/",
-                "configs": f"./out_{name}/configs/",
-            },
-            filename_prefix=name,
-            num_tablets=500,
-            exclude_faces=None,
-        )
+# ----run 2----
+#if __name__ == "__main__":
+#    from config import CURVED_RUN_CONFIG, BASELINE_RUN_CONFIG, W3DGE_MATCH_CONFIG
+#
+#    for name, cfg in (("curved", CURVED_RUN_CONFIG), ("baseline", BASELINE_RUN_CONFIG)):
+#        generate_dataset(
+#            cfg=cfg,
+#            paleocodes_path="./paleocodes.json",
+#            output_dirs={
+#                "mesh": f"./out_{name}/plys/",
+#                "labels": f"./out_{name}/labels/",
+#                "annotations": f"./out_{name}/annotations/",
+#                "configs": f"./out_{name}/configs/",
+#            },
+#            filename_prefix=name,
+#            num_tablets=50,
+#            exclude_faces=None,
+#        )
+
+#----run 3----
+if __name__ == "__main__":
+    from config import W3DGE_CURVED_CONFIG
+
+    generate_dataset(
+        cfg=W3DGE_CURVED_CONFIG,
+        paleocodes_path="./paleocodes.json",
+        output_dirs={
+            "mesh": "./out_curved_w3dge/plys/",
+            "labels": "./out_curved_w3dge/labels/",
+            "annotations": "./out_curved_w3dge/annotations/",
+            "configs": "./out_curved_w3dge/configs/",
+        },
+        filename_prefix="curved_w3dge",
+        num_tablets=3,
+        sign_source="paleocode",
+        exclude_faces=None,      # all six faces allowed
+    )
