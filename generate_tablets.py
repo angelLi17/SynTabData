@@ -306,20 +306,39 @@ def generate_dataset(
 #        )
 
 #----run 3----
+#if __name__ == "__main__":
+#    from config import W3DGE_CURVED_CONFIG
+
+#    generate_dataset(
+#        cfg=W3DGE_CURVED_CONFIG,
+#        paleocodes_path="./paleocodes.json",
+#        output_dirs={
+#            "mesh": "./out_curved_w3dge/plys/",
+#            "labels": "./out_curved_w3dge/labels/",
+#            "annotations": "./out_curved_w3dge/annotations/",
+#            "configs": "./out_curved_w3dge/configs/",
+#        },
+#        filename_prefix="curved_w3dge",
+#        num_tablets=3,
+#        sign_source="paleocode",
+#        exclude_faces=None,      # all six faces allowed
+#    )
+
+#----run 4----
 if __name__ == "__main__":
-    from config import W3DGE_CURVED_CONFIG
+    from config import W3DGE_EDGE_CONFIG
 
     generate_dataset(
-        cfg=W3DGE_CURVED_CONFIG,
+        cfg=W3DGE_EDGE_CONFIG,
         paleocodes_path="./paleocodes.json",
         output_dirs={
-            "mesh": "./out_curved_w3dge/plys/",
-            "labels": "./out_curved_w3dge/labels/",
-            "annotations": "./out_curved_w3dge/annotations/",
-            "configs": "./out_curved_w3dge/configs/",
+            "mesh": "./out_edge_w3dge/plys/",
+            "labels": "./out_edge_w3dge/labels/",
+            "annotations": "./out_edge_w3dge/annotations/",
+            "configs": "./out_edge_w3dge/configs/",
         },
-        filename_prefix="curved_w3dge",
+        filename_prefix="edge_w3dge",
         num_tablets=3,
         sign_source="paleocode",
-        exclude_faces=None,      # all six faces allowed
+        exclude_faces=None,
     )

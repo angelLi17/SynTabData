@@ -421,3 +421,18 @@ W3DGE_CURVED_CONFIG = TabletConfig(        # rounder tablets, more curved writin
     generation=GenerationConfig(base_seed=1234, workers=2),
     **_FINE,
 )
+
+# run 4 w3dge size + writing over edges and ends
+
+W3DGE_EDGE_CONFIG = TabletConfig(
+    geometry=GeometryConfig(**_MATCH_GEOM, epsilon_range=(0.4, 0.7), eta_range=(0.4, 0.7)),
+    layout=LayoutConfig(
+        target_sign_height_frac=0.06,
+        project_iters=12,
+        margin_side_frac=0.01,
+        margin_top_frac=0.01,
+        margin_bottom_frac=0.01,
+    ),
+    generation=GenerationConfig(base_seed=2468, workers=2),
+    **_FINE,
+)
